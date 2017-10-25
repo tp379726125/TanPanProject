@@ -16,7 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 100, 40)];
+    view.backgroundColor = [UIColor grayColor];
+    [view showBoderInPosition:InPositionAll andStrokeColor:[UIColor redColor] andLineStyle:0];
+    [self.view addSubview:view];
+    
+    
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(200, 200, 100, 40)];
+    button.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:button];
+    
+    button.touchBlock = ^(UIButton *sender){
+        NSLog(@"1");
+    };
+    
+    
 }
 
 

@@ -14,6 +14,8 @@
 		3BDCF97E1FA02E1B008DE4A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCF97D1FA02E1B008DE4A4 /* Assets.xcassets */; };
 		3BDCF9811FA02E1B008DE4A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCF97F1FA02E1B008DE4A4 /* LaunchScreen.storyboard */; };
 		3BDCF9891FA02FEA008DE4A4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCF9881FA02FEA008DE4A4 /* Podfile */; };
+		3BDCF98E1FA063E6008DE4A4 /* UIView+TPChildViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCF98D1FA063E6008DE4A4 /* UIView+TPChildViewCategory.m */; };
+		3BDCF9911FA07C04008DE4A4 /* UIButton+TPButtonCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCF9901FA07C04008DE4A4 /* UIButton+TPButtonCategory.m */; };
 		CCD5191131675FF39CDF13C4 /* libPods-TanPanProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE29C23E9DC9C97785D5011 /* libPods-TanPanProject.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,10 @@
 		3BDCF9821FA02E1B008DE4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BDCF9881FA02FEA008DE4A4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		3BDCF98A1FA03053008DE4A4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3BDCF98C1FA063E6008DE4A4 /* UIView+TPChildViewCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TPChildViewCategory.h"; sourceTree = "<group>"; };
+		3BDCF98D1FA063E6008DE4A4 /* UIView+TPChildViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TPChildViewCategory.m"; sourceTree = "<group>"; };
+		3BDCF98F1FA07C04008DE4A4 /* UIButton+TPButtonCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TPButtonCategory.h"; sourceTree = "<group>"; };
+		3BDCF9901FA07C04008DE4A4 /* UIButton+TPButtonCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TPButtonCategory.m"; sourceTree = "<group>"; };
 		4E5C525242CDBF9223216E44 /* Pods-TanPanProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanPanProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TanPanProject/Pods-TanPanProject.debug.xcconfig"; sourceTree = "<group>"; };
 		8BE29C23E9DC9C97785D5011 /* libPods-TanPanProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TanPanProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4F1654B138A30E9A8FAE70 /* Pods-TanPanProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanPanProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TanPanProject/Pods-TanPanProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +75,7 @@
 		3BDCF9701FA02E1A008DE4A4 /* TanPanProject */ = {
 			isa = PBXGroup;
 			children = (
+				3BDCF98B1FA061D4008DE4A4 /* BasicClass */,
 				3BDCF9741FA02E1A008DE4A4 /* AppDelegate.h */,
 				3BDCF9751FA02E1A008DE4A4 /* AppDelegate.m */,
 				3BDCF9771FA02E1A008DE4A4 /* ViewController.h */,
@@ -89,6 +96,17 @@
 				3BDCF98A1FA03053008DE4A4 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BDCF98B1FA061D4008DE4A4 /* BasicClass */ = {
+			isa = PBXGroup;
+			children = (
+				3BDCF98C1FA063E6008DE4A4 /* UIView+TPChildViewCategory.h */,
+				3BDCF98D1FA063E6008DE4A4 /* UIView+TPChildViewCategory.m */,
+				3BDCF98F1FA07C04008DE4A4 /* UIButton+TPButtonCategory.h */,
+				3BDCF9901FA07C04008DE4A4 /* UIButton+TPButtonCategory.m */,
+			);
+			path = BasicClass;
 			sourceTree = "<group>";
 		};
 		55B5021FAF8200A90905F1A0 /* Pods */ = {
@@ -232,7 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDCF98E1FA063E6008DE4A4 /* UIView+TPChildViewCategory.m in Sources */,
 				3BDCF9791FA02E1A008DE4A4 /* ViewController.m in Sources */,
+				3BDCF9911FA07C04008DE4A4 /* UIButton+TPButtonCategory.m in Sources */,
 				3BDCF9761FA02E1A008DE4A4 /* AppDelegate.m in Sources */,
 				3BDCF9731FA02E1A008DE4A4 /* main.m in Sources */,
 			);
