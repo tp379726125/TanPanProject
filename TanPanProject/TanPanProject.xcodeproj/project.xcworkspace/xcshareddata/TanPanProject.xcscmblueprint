@@ -1,21 +1,28 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "a162b511-0ab0-23a0-1c11-ce57b7db7bff++505",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "10648F8591645E87B4F60B559661A7ACF6EC150E",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "a162b511-0ab0-23a0-1c11-ce57b7db7bff++505" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "a162b511-0ab0-23a0-1c11-ce57b7db7bff++505" : 9223372036854775807
+    "a162b511-0ab0-23a0-1c11-ce57b7db7bff++505" : 9223372036854775807,
+    "10648F8591645E87B4F60B559661A7ACF6EC150E" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "613E5C02-989F-4CA4-866E-09B7EC0C2ADE",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "a162b511-0ab0-23a0-1c11-ce57b7db7bff++505" : "TanPanProject\/"
+    "a162b511-0ab0-23a0-1c11-ce57b7db7bff++505" : "TanPanProject\/",
+    "10648F8591645E87B4F60B559661A7ACF6EC150E" : "TPanProject\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "TanPanProject",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TanPanProject\/TanPanProject.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tp379726125\/TanPanProject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "10648F8591645E87B4F60B559661A7ACF6EC150E"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tp379726125\/TanPanProject.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
