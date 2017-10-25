@@ -13,6 +13,8 @@
 		3BDCF97C1FA02E1A008DE4A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCF97A1FA02E1A008DE4A4 /* Main.storyboard */; };
 		3BDCF97E1FA02E1B008DE4A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCF97D1FA02E1B008DE4A4 /* Assets.xcassets */; };
 		3BDCF9811FA02E1B008DE4A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCF97F1FA02E1B008DE4A4 /* LaunchScreen.storyboard */; };
+		3BDCF9891FA02FEA008DE4A4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCF9881FA02FEA008DE4A4 /* Podfile */; };
+		CCD5191131675FF39CDF13C4 /* libPods-TanPanProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE29C23E9DC9C97785D5011 /* libPods-TanPanProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		3BDCF97D1FA02E1B008DE4A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BDCF9801FA02E1B008DE4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BDCF9821FA02E1B008DE4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BDCF9881FA02FEA008DE4A4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		3BDCF98A1FA03053008DE4A4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4E5C525242CDBF9223216E44 /* Pods-TanPanProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanPanProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TanPanProject/Pods-TanPanProject.debug.xcconfig"; sourceTree = "<group>"; };
+		8BE29C23E9DC9C97785D5011 /* libPods-TanPanProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TanPanProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4F1654B138A30E9A8FAE70 /* Pods-TanPanProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanPanProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TanPanProject/Pods-TanPanProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD5191131675FF39CDF13C4 /* libPods-TanPanProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +50,11 @@
 		3BDCF9651FA02E1A008DE4A4 = {
 			isa = PBXGroup;
 			children = (
+				3BDCF9881FA02FEA008DE4A4 /* Podfile */,
 				3BDCF9701FA02E1A008DE4A4 /* TanPanProject */,
 				3BDCF96F1FA02E1A008DE4A4 /* Products */,
+				55B5021FAF8200A90905F1A0 /* Pods */,
+				75E3253C7EEEE97DD752A287 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,8 +86,26 @@
 			isa = PBXGroup;
 			children = (
 				3BDCF9721FA02E1A008DE4A4 /* main.m */,
+				3BDCF98A1FA03053008DE4A4 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55B5021FAF8200A90905F1A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E5C525242CDBF9223216E44 /* Pods-TanPanProject.debug.xcconfig */,
+				AA4F1654B138A30E9A8FAE70 /* Pods-TanPanProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75E3253C7EEEE97DD752A287 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BE29C23E9DC9C97785D5011 /* libPods-TanPanProject.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BDCF9851FA02E1B008DE4A4 /* Build configuration list for PBXNativeTarget "TanPanProject" */;
 			buildPhases = (
+				86C7370C0016B11425C855F6 /* [CP] Check Pods Manifest.lock */,
 				3BDCF96A1FA02E1A008DE4A4 /* Sources */,
 				3BDCF96B1FA02E1A008DE4A4 /* Frameworks */,
 				3BDCF96C1FA02E1A008DE4A4 /* Resources */,
+				548E7F01FDD2A05392691A70 /* [CP] Embed Pods Frameworks */,
+				5E678B4051A3E23D7E6BD333 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,11 +172,60 @@
 			files = (
 				3BDCF9811FA02E1B008DE4A4 /* LaunchScreen.storyboard in Resources */,
 				3BDCF97E1FA02E1B008DE4A4 /* Assets.xcassets in Resources */,
+				3BDCF9891FA02FEA008DE4A4 /* Podfile in Resources */,
 				3BDCF97C1FA02E1A008DE4A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		548E7F01FDD2A05392691A70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TanPanProject/Pods-TanPanProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E678B4051A3E23D7E6BD333 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TanPanProject/Pods-TanPanProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86C7370C0016B11425C855F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BDCF96A1FA02E1A008DE4A4 /* Sources */ = {
@@ -269,9 +350,12 @@
 		};
 		3BDCF9861FA02E1B008DE4A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E5C525242CDBF9223216E44 /* Pods-TanPanProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 843FYE8QKS;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TanPanProject/PrefixHeader.pch;
 				INFOPLIST_FILE = TanPanProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangan.TanPanProject;
@@ -281,9 +365,12 @@
 		};
 		3BDCF9871FA02E1B008DE4A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA4F1654B138A30E9A8FAE70 /* Pods-TanPanProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 843FYE8QKS;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TanPanProject/PrefixHeader.pch;
 				INFOPLIST_FILE = TanPanProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangan.TanPanProject;
@@ -310,6 +397,7 @@
 				3BDCF9871FA02E1B008DE4A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

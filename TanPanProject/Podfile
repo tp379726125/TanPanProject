@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '8.0'
+
+target 'TanPanProject' do
+# Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+# use_frameworks!
+
+# Pods for PollutionMonitor
+pod 'YYKit', '~> 1.0.9'       #模型转换（YYModel）以及工具
+pod 'Masonry', '~> 1.1.0'     #约束布局框架
+pod 'MJRefresh', '~> 3.1.12'  #下拉刷新与上拉加载
+pod 'SDWebImage', '~> 4.1.0'  #图片缓存
+pod 'AFNetworking', '~> 3.1.0'#网络框架
+pod 'MBProgressHUD', '~> 1.0.0'   #HUD
+pod 'MGJRouter', '~> 0.9.3'
+pod 'IQKeyboardManager'  #键盘
+pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'  #计算cell高度
+pod 'FDFullscreenPopGesture', '~> 1.1' #侧滑返回的手势
+#pod 'LGAlertView' #AlerView
+
+pod 'MLeaksFinder', :configurations => ['Debug'] #内存泄漏检测工具
+
+
+
+end
