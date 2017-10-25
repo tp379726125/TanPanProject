@@ -26,7 +26,9 @@
     UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(200, 200, 100, 40)];
     button.backgroundColor = [UIColor grayColor];
     [self.view addSubview:button];
-    
+    [button setTitle:@"你好" forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:@"主页-2"] forState:UIControlStateNormal];
+    [button layoutButtonWithEdgeInsetsStyle:TPButtonEdgeInsetsStyleRight imageTitleSpace:5];
     button.touchBlock = ^(UIButton *sender){
         NSLog(@"1");
     };
