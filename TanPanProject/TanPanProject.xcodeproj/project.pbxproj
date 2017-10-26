@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BDC24AF1FA187C500EB55EE /* TPTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC24AE1FA187C500EB55EE /* TPTableView.m */; };
 		3BDCF9731FA02E1A008DE4A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCF9721FA02E1A008DE4A4 /* main.m */; };
 		3BDCF9761FA02E1A008DE4A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCF9751FA02E1A008DE4A4 /* AppDelegate.m */; };
 		3BDCF9791FA02E1A008DE4A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCF9781FA02E1A008DE4A4 /* ViewController.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BDC24AD1FA187C500EB55EE /* TPTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPTableView.h; sourceTree = "<group>"; };
+		3BDC24AE1FA187C500EB55EE /* TPTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPTableView.m; sourceTree = "<group>"; };
 		3BDCF96E1FA02E1A008DE4A4 /* TanPanProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TanPanProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BDCF9721FA02E1A008DE4A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3BDCF9741FA02E1A008DE4A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				3BDCF98D1FA063E6008DE4A4 /* UIView+TPChildViewCategory.m */,
 				3BDCF98F1FA07C04008DE4A4 /* UIButton+TPButtonCategory.h */,
 				3BDCF9901FA07C04008DE4A4 /* UIButton+TPButtonCategory.m */,
+				3BDC24AD1FA187C500EB55EE /* TPTableView.h */,
+				3BDC24AE1FA187C500EB55EE /* TPTableView.m */,
 			);
 			path = BasicClass;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BDCF98E1FA063E6008DE4A4 /* UIView+TPChildViewCategory.m in Sources */,
+				3BDC24AF1FA187C500EB55EE /* TPTableView.m in Sources */,
 				3BDCF9791FA02E1A008DE4A4 /* ViewController.m in Sources */,
 				3BDCF9911FA07C04008DE4A4 /* UIButton+TPButtonCategory.m in Sources */,
 				3BDCF9761FA02E1A008DE4A4 /* AppDelegate.m in Sources */,
