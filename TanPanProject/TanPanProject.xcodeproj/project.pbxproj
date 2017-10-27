@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BA82B4E1FA2BC5700316816 /* TPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA82B4D1FA2BC5700316816 /* TPView.m */; };
 		3BDC24AF1FA187C500EB55EE /* TPTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC24AE1FA187C500EB55EE /* TPTableView.m */; };
+		3BDC24B21FA1E5E400EB55EE /* TPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC24B11FA1E5E400EB55EE /* TPTableViewCell.m */; };
 		3BDCF9731FA02E1A008DE4A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCF9721FA02E1A008DE4A4 /* main.m */; };
 		3BDCF9761FA02E1A008DE4A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCF9751FA02E1A008DE4A4 /* AppDelegate.m */; };
 		3BDCF9791FA02E1A008DE4A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCF9781FA02E1A008DE4A4 /* ViewController.m */; };
@@ -21,8 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BA82B4C1FA2BC5700316816 /* TPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPView.h; sourceTree = "<group>"; };
+		3BA82B4D1FA2BC5700316816 /* TPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPView.m; sourceTree = "<group>"; };
 		3BDC24AD1FA187C500EB55EE /* TPTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPTableView.h; sourceTree = "<group>"; };
 		3BDC24AE1FA187C500EB55EE /* TPTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPTableView.m; sourceTree = "<group>"; };
+		3BDC24B01FA1E5E400EB55EE /* TPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPTableViewCell.h; sourceTree = "<group>"; };
+		3BDC24B11FA1E5E400EB55EE /* TPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPTableViewCell.m; sourceTree = "<group>"; };
 		3BDCF96E1FA02E1A008DE4A4 /* TanPanProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TanPanProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BDCF9721FA02E1A008DE4A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3BDCF9741FA02E1A008DE4A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +94,8 @@
 				3BDCF97F1FA02E1B008DE4A4 /* LaunchScreen.storyboard */,
 				3BDCF9821FA02E1B008DE4A4 /* Info.plist */,
 				3BDCF9711FA02E1A008DE4A4 /* Supporting Files */,
+				3BDC24B01FA1E5E400EB55EE /* TPTableViewCell.h */,
+				3BDC24B11FA1E5E400EB55EE /* TPTableViewCell.m */,
 			);
 			path = TanPanProject;
 			sourceTree = "<group>";
@@ -110,6 +118,8 @@
 				3BDCF9901FA07C04008DE4A4 /* UIButton+TPButtonCategory.m */,
 				3BDC24AD1FA187C500EB55EE /* TPTableView.h */,
 				3BDC24AE1FA187C500EB55EE /* TPTableView.m */,
+				3BA82B4C1FA2BC5700316816 /* TPView.h */,
+				3BA82B4D1FA2BC5700316816 /* TPView.m */,
 			);
 			path = BasicClass;
 			sourceTree = "<group>";
@@ -160,6 +170,7 @@
 		3BDCF9661FA02E1A008DE4A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TP;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "重庆网安信息技术有限公司";
 				TargetAttributes = {
@@ -257,8 +268,10 @@
 			files = (
 				3BDCF98E1FA063E6008DE4A4 /* UIView+TPChildViewCategory.m in Sources */,
 				3BDC24AF1FA187C500EB55EE /* TPTableView.m in Sources */,
+				3BA82B4E1FA2BC5700316816 /* TPView.m in Sources */,
 				3BDCF9791FA02E1A008DE4A4 /* ViewController.m in Sources */,
 				3BDCF9911FA07C04008DE4A4 /* UIButton+TPButtonCategory.m in Sources */,
+				3BDC24B21FA1E5E400EB55EE /* TPTableViewCell.m in Sources */,
 				3BDCF9761FA02E1A008DE4A4 /* AppDelegate.m in Sources */,
 				3BDCF9731FA02E1A008DE4A4 /* main.m in Sources */,
 			);

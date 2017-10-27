@@ -25,17 +25,8 @@
     layer.lineWidth = 1.0;
     layer.strokeColor = color.CGColor;
     layer.fillColor = [UIColor clearColor].CGColor;
-    UIBezierPath *currenPath = [UIBezierPath bezierPathWithRoundedRect:CGRectZero cornerRadius:30];
-    
-    if (linPosition & InPositionAll) { //所有
-        // 设置起点
-        [currenPath moveToPoint:CGPointMake(0, 0)];
-        //把点加入到路径里面
-        [currenPath addLineToPoint:CGPointMake(0, self.frame.size.height)];
-        [currenPath addLineToPoint:CGPointMake(self.frame.size.width, self.frame.size.height)];
-        [currenPath addLineToPoint:CGPointMake(self.frame.size.width, 0)];
-        [currenPath addLineToPoint:CGPointMake(0, 0)];
-    }
+    UIBezierPath *currenPath = [UIBezierPath bezierPath];
+    NSLog(@"%@",NSStringFromCGRect(self.bounds));
     
     if (linPosition & InPositionLeft) //左边
     {

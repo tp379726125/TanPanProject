@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TPTableView.h"
+#import "TPView.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong)TPTableView *tableView;
@@ -34,22 +35,49 @@
 //        NSLog(@"1");
 //    };
 
-    [self.view addSubview:self.tableView];
     
-    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.trailing.top.bottom.mas_equalTo(0);
-        
-    }];
     
-    self.tableView.headerRefreshBlock = ^(TPTableView *tableView){
-        
-        [tableView headerEndRefresh];
+    
+    
+//    [self.view addSubview:self.tableView];
+//    
+//    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.trailing.top.bottom.mas_equalTo(0);
+//        
+//    }];
+//    
+//    self.tableView.headerRefreshBlock = ^(TPTableView *tableView){
+//        
+//        [tableView headerEndRefresh];
+//    };
+//    
+//    self.tableView.footerRefreshBlock = ^(TPTableView *tableView){
+//        
+//        [tableView footerEndRefresh];
+//    };
+    
+    
+    
+    
+    TPView *view = [[TPView alloc]initWithFrame:CGRectMake(10, 30, self.view.frame.size.width - 20, 40)];
+    [self.view addSubview:view];
+    
+    
+    
+//    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.mas_equalTo(10);
+//        make.trailing.mas_equalTo(-10);
+//        make.top.mas_equalTo(30);
+//        make.height.mas_equalTo(40);
+//    }];
+    [view showBoderInPosition:InPositionAll andStrokeColor:[UIColor grayColor] andLineStyle:0];
+    
+    view.textField.text = @"哈哈哈";
+    
+    view.pressedBlock = ^(UIButton *sender){
+        NSLog(@"1");
     };
     
-    self.tableView.footerRefreshBlock = ^(TPTableView *tableView){
-        
-        [tableView footerEndRefresh];
-    };
 }
 
 

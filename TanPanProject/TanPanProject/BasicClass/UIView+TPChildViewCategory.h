@@ -14,7 +14,7 @@ typedef NS_OPTIONS(NSInteger,lineInPosition) { //划线的位置
     InPositionLeft = 1 << 1,     //左边
     InPositionBottom = 1 << 2,   //下边
     InPositionRight = 1 << 3,     //右边
-    InPositionAll = 1 << 4     //所有
+    InPositionAll = InPositionTop | InPositionLeft | InPositionBottom | InPositionRight      //所有
 } ;
 
 typedef NS_ENUM(NSInteger,lineStyle){ //实线、虚线
