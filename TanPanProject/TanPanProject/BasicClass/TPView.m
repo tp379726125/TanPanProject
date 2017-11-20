@@ -44,7 +44,9 @@
     [self addSubview:_button];
     
     [_textField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.leading.trailing.mas_equalTo(0);
+        make.top.mas_equalTo(0);
+        make.leading.mas_equalTo(10);
+        make.trailing.mas_equalTo(-10);
         make.bottom.mas_offset(0);
     }];
     

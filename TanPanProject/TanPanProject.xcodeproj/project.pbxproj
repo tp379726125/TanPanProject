@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B2204F21FA702F300E50027 /* TPPictureByView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2204F11FA702F300E50027 /* TPPictureByView.m */; };
+		3B62A2EF1FAAC41F001911AF /* TPToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B62A2EE1FAAC41F001911AF /* TPToolBar.m */; };
 		3BA82B4E1FA2BC5700316816 /* TPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA82B4D1FA2BC5700316816 /* TPView.m */; };
 		3BDC24AF1FA187C500EB55EE /* TPTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC24AE1FA187C500EB55EE /* TPTableView.m */; };
 		3BDC24B21FA1E5E400EB55EE /* TPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC24B11FA1E5E400EB55EE /* TPTableViewCell.m */; };
@@ -19,10 +21,15 @@
 		3BDCF9891FA02FEA008DE4A4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3BDCF9881FA02FEA008DE4A4 /* Podfile */; };
 		3BDCF98E1FA063E6008DE4A4 /* UIView+TPChildViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCF98D1FA063E6008DE4A4 /* UIView+TPChildViewCategory.m */; };
 		3BDCF9911FA07C04008DE4A4 /* UIButton+TPButtonCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCF9901FA07C04008DE4A4 /* UIButton+TPButtonCategory.m */; };
+		3BF86B611FA9529D003FD6DA /* TPPictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF86B601FA9529D003FD6DA /* TPPictureCollectionViewCell.m */; };
 		CCD5191131675FF39CDF13C4 /* libPods-TanPanProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE29C23E9DC9C97785D5011 /* libPods-TanPanProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B2204F01FA702F300E50027 /* TPPictureByView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPPictureByView.h; sourceTree = "<group>"; };
+		3B2204F11FA702F300E50027 /* TPPictureByView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPPictureByView.m; sourceTree = "<group>"; };
+		3B62A2ED1FAAC41E001911AF /* TPToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPToolBar.h; sourceTree = "<group>"; };
+		3B62A2EE1FAAC41F001911AF /* TPToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPToolBar.m; sourceTree = "<group>"; };
 		3BA82B4C1FA2BC5700316816 /* TPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPView.h; sourceTree = "<group>"; };
 		3BA82B4D1FA2BC5700316816 /* TPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPView.m; sourceTree = "<group>"; };
 		3BDC24AD1FA187C500EB55EE /* TPTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPTableView.h; sourceTree = "<group>"; };
@@ -39,12 +46,14 @@
 		3BDCF97D1FA02E1B008DE4A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BDCF9801FA02E1B008DE4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BDCF9821FA02E1B008DE4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BDCF9881FA02FEA008DE4A4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		3BDCF9881FA02FEA008DE4A4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3BDCF98A1FA03053008DE4A4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		3BDCF98C1FA063E6008DE4A4 /* UIView+TPChildViewCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TPChildViewCategory.h"; sourceTree = "<group>"; };
 		3BDCF98D1FA063E6008DE4A4 /* UIView+TPChildViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TPChildViewCategory.m"; sourceTree = "<group>"; };
 		3BDCF98F1FA07C04008DE4A4 /* UIButton+TPButtonCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TPButtonCategory.h"; sourceTree = "<group>"; };
 		3BDCF9901FA07C04008DE4A4 /* UIButton+TPButtonCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TPButtonCategory.m"; sourceTree = "<group>"; };
+		3BF86B5F1FA9529D003FD6DA /* TPPictureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPPictureCollectionViewCell.h; sourceTree = "<group>"; };
+		3BF86B601FA9529D003FD6DA /* TPPictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPPictureCollectionViewCell.m; sourceTree = "<group>"; };
 		4E5C525242CDBF9223216E44 /* Pods-TanPanProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanPanProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TanPanProject/Pods-TanPanProject.debug.xcconfig"; sourceTree = "<group>"; };
 		8BE29C23E9DC9C97785D5011 /* libPods-TanPanProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TanPanProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4F1654B138A30E9A8FAE70 /* Pods-TanPanProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanPanProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TanPanProject/Pods-TanPanProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +129,12 @@
 				3BDC24AE1FA187C500EB55EE /* TPTableView.m */,
 				3BA82B4C1FA2BC5700316816 /* TPView.h */,
 				3BA82B4D1FA2BC5700316816 /* TPView.m */,
+				3BF86B5F1FA9529D003FD6DA /* TPPictureCollectionViewCell.h */,
+				3BF86B601FA9529D003FD6DA /* TPPictureCollectionViewCell.m */,
+				3B2204F01FA702F300E50027 /* TPPictureByView.h */,
+				3B2204F11FA702F300E50027 /* TPPictureByView.m */,
+				3B62A2ED1FAAC41E001911AF /* TPToolBar.h */,
+				3B62A2EE1FAAC41F001911AF /* TPToolBar.m */,
 			);
 			path = BasicClass;
 			sourceTree = "<group>";
@@ -266,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B62A2EF1FAAC41F001911AF /* TPToolBar.m in Sources */,
+				3B2204F21FA702F300E50027 /* TPPictureByView.m in Sources */,
 				3BDCF98E1FA063E6008DE4A4 /* UIView+TPChildViewCategory.m in Sources */,
 				3BDC24AF1FA187C500EB55EE /* TPTableView.m in Sources */,
 				3BA82B4E1FA2BC5700316816 /* TPView.m in Sources */,
@@ -274,6 +291,7 @@
 				3BDC24B21FA1E5E400EB55EE /* TPTableViewCell.m in Sources */,
 				3BDCF9761FA02E1A008DE4A4 /* AppDelegate.m in Sources */,
 				3BDCF9731FA02E1A008DE4A4 /* main.m in Sources */,
+				3BF86B611FA9529D003FD6DA /* TPPictureCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

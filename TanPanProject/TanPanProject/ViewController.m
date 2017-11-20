@@ -9,9 +9,13 @@
 #import "ViewController.h"
 #import "TPTableView.h"
 #import "TPView.h"
+#import "TPPictureByView.h"
+#import "TPToolBar.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic,strong)TPTableView *tableView;
+@property (nonatomic,strong)TPTableView         *tableView;
+@property (nonatomic,strong)TPPictureByView     *pictureByView;
+@property (nonatomic,strong)TPToolBar           *tpToolBar;
 @end
 
 @implementation ViewController
@@ -58,25 +62,48 @@
     
     
     
-    
-    TPView *view = [[TPView alloc]initWithFrame:CGRectMake(10, 30, self.view.frame.size.width - 20, 40)];
+
+    TPView *view = [[TPView alloc]init];//WithFrame:CGRectMake(10, 30, self.view.frame.size.width - 20, 40)]
     [self.view addSubview:view];
+
+    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(10);
+        make.trailing.mas_equalTo(-10);
+        make.top.mas_equalTo(30);
+        make.height.mas_equalTo(40);
+    }];
+    [view showBoderInPosition:InPositionAll andStrokeColor:[UIColor grayColor] andLineStyle:1];
+    // 先调用superView的layoutIfNeeded方法再获取frame
+    LayoutIfNeeded
+    
+//    view.textField.text = @"哈哈哈";
+//    
+//    view.pressedBlock = ^(UIButton *sender){
+//        NSLog(@"1");
+//    };
+
+ 
     
     
     
-//    [view mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.leading.mas_equalTo(10);
-//        make.trailing.mas_equalTo(-10);
-//        make.top.mas_equalTo(30);
-//        make.height.mas_equalTo(40);
+//    UITextField *text = [UITextField new];
+//    [self.view addSubview:text];
+//    [text mas_makeConstraints:^(MASConstraintMaker *make) {
+//                make.leading.mas_equalTo(10);
+//                make.trailing.mas_equalTo(-10);
+//                make.top.mas_equalTo(30);
+//                make.height.mas_equalTo(40);
 //    }];
-    [view showBoderInPosition:InPositionAll andStrokeColor:[UIColor grayColor] andLineStyle:0];
+//    text.backgroundColor = [UIColor grayColor];
+//    text.inputAccessoryView = self.tpToolBar;
+//
+//    self.tpToolBar.sureButtonTouchBlock = ^(UIButton *sender)
+//    {
+//        [text resignFirstResponder];
+//        NSLog(@"1  %@",sender.titleLabel.text);
+//    };
     
-    view.textField.text = @"哈哈哈";
-    
-    view.pressedBlock = ^(UIButton *sender){
-        NSLog(@"1");
-    };
+   
     
 }
 
@@ -110,5 +137,22 @@
     }
     return _tableView;
 }
+
+- (TPPictureByView *)pictureByView
+{
+    if (!_pictureByView) {
+        _pictureByView = [TPPictureByView new];
+    }
+    return _pictureByView;
+}
+
+- (TPToolBar *)tpToolBar
+{
+    if (!_tpToolBar) {
+        _tpToolBar = [[TPToolBar alloc]initWithFrame:CGRectMake(0, 0, Screen_Width, 40)];
+    }
+    return _tpToolBar;
+}
+
 
 @end
